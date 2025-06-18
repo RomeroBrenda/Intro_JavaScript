@@ -9,3 +9,14 @@ _ Usa un for para resolver este ejercicio.
 
 const prompt = require('prompt-sync')()
 
+// Generamos un numero aleatorio del 1 al 10
+
+// - Math.random() da un número decimal entre 0 (incluido) y 1 (excluido)
+// - Al multiplicar por 10, el rango pasa a ser entre 0 y casi 10 (¡Nunca da 10 exacto!)
+// 0 <= Math.random() * 10 < 10
+
+// - Math.floor redondea hacia abajo, así que da un número entero entre 0 y 9.
+// - Sumamos 1 para que el rango o resultado final sea entre 1 y 10. 
+// Math.floor(Math.random() * 10) + 1
+
+const numeroSecreto = Math.floor(Math.random() * 10) + 1;
