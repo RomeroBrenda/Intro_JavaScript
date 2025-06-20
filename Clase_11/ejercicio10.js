@@ -20,3 +20,21 @@ const prompt = require('prompt-sync')()
 // Math.floor(Math.random() * 10) + 1
 
 const numeroSecreto = Math.floor(Math.random() * 10) + 1;
+
+let acertado = false; 
+
+for (let intento = 1; intento <= 3; intento++) {
+    let respuesta = parseInt(prompt(`Intento ${intento}: Adivina el número (entre 1 y 10): `));
+
+    if (respuesta === numeroSecreto) {
+        console.log(`¡Muy bien! Adivinaste el número en el intento ${intento}`);
+        acertado = true;
+        break; // 🟢 Esto ahora sí está bien ubicado
+    } else {
+        console.log("Número Incorrecto!");
+    }
+}
+
+if (!acertado) {
+    console.log(`Lo siento! El número secreto era: ${numeroSecreto}`);
+}
