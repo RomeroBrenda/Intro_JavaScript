@@ -1,6 +1,5 @@
 /*
 Ejercicio 3: Suma de dos números ingresados por el usuario
-
 Escribe un programa que: 
  _Pida al usuario que ingrese dos números. 
  _Sume ambos números. 

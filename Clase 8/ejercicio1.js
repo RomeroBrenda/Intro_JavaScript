@@ -1,5 +1,5 @@
-
-/*Ejercicio 1: Calcula el doble de un número
+/*
+Ejercicio 1: Calcula el doble de un número
 Debes escribir un programa que: 
 _Solicite al usuario que ingrese un número cualquiera. 
 _Calcule el doble de ese número. 
@@ -10,5 +10,13 @@ _Muestre el resultado en la consola.
 • Utiliza un operador aritmético para calcular el doble del número.
 */
 
+const prompt = require("prompt-sync")();
 
-const prompt = require("prompt-sync")({ sigint: true })
+// Pedimos al usuario un número y lo convertimos a tipo Number
+const numero = Number(prompt("Ingresa un número: "));
+
+// Calculamos el doble
+const doble = numero * 2;
+
+// Mostramos el resultado
+console.log(`El doble de ${numero} es ${doble}.`);
